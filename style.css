@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c0c0c;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(352.72, 98%, 41%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(166.53, 72%, 60%) 0, transparent 55%);
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(225, 225, 225, 0.54);
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+.search-field{
+    outline: none;
+    border: none;
+    background: transparent;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    color: white;
+    height: 42px;
+    padding-left: 8px;
+}
+
+.search-field:focus{
+    outline: none;
+}
+
+.search-icon{
+    color: white;
+    padding: 4px;
+    margin: 0 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.search-icon:hover{
+    background-color: rgb(204, 204, 204);
+}
+
+.profile-box{
+    /* backdrop-filter: blur(18px) saturate(188%); */
+    backdrop-filter: blur(18px) saturate(188%);
+    -webkit-backdrop-filter: blur(18px) saturate(188%);
+    background-color: rgba(182, 182, 182, 0.54);
+    box-shadow: 10px 4px 64px 12px rgba(255, 255, 255, 0.26);
+    border-radius: 28px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    padding: 24px;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    transition: all 0.3s;
+}
+
+.image-box{
+    margin: 12px 16px;
+}
+
+.profile-pic{
+    width: 160px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.4);
+}
+
+.content-box{
+    margin: 0 0 0 24px;
+    color:white;
+    width: 500px;
+    max-width: 500px;
+}
+
+.name{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+}
+
+.username{
+    margin-top: -8px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    transition: all 0.3s;
+}
+
+.username:hover{
+    text-decoration: underline;
+}
+
+.bio{
+    width: 100%;
+    margin-top: 12px;
+}
+
+.profile-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 16px 0;
+}
+
+.info-item{
+    font-weight: 400;
+}
+
+.followers, .following, .repos{
+    font-weight: 700;
+}
+
+.repo-heading{
+    margin-bottom: 12px;
+}
+
+.repo{
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 4px;
+    transition: all 0.3s;
+}
+
+.repo:hover{
+    text-decoration: underline;
+}
+
+.repo:visited{
+    color: white;
+}
+
+.repo:last-of-type{
+    margin-right: 0;
+}
+
+.repo-btn{
+    display: none;
+    text-decoration: underline;
+    color: white;
+    margin: 4px 0 0 4px;
+}
